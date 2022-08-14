@@ -17,47 +17,67 @@
     <link rel="icon" href="assets/favicon.ico" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/hex-menu.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <main>
-      <header class="header">
-        <a href="https://henrynorth.github.io/" target="_blank">
-          <img class="header__logo" src="assets/logo.png" alt="" />
-        </a>
-        <p class="header__subtitle">I design and build websites, web apps and game UI.</p>
-        <a class="header__button" href="https://github.com/HenryNorth" target="_blank">Github</a>
-        <svg class="github-btn-effect" xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <defs>
-            <filter id="gooey">
-              <!-- in="sourceGraphic" -->
-              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-              <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
-              <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
-            </filter>
-          </defs>
-        </svg>
-        <a href="https://github.com/HenryNorth" target="_blank">
-          <button id="gooey-button">
-            Github
-            <span class="bubbles">
-              <span class="bubble"></span>
-              <span class="bubble"></span>
-              <span class="bubble"></span>
-              <span class="bubble"></span>
-              <span class="bubble"></span>
-              <span class="bubble"></span>
-              <span class="bubble"></span>
-              <span class="bubble"></span>
-              <span class="bubble"></span>
-              <span class="bubble"></span>
-            </span>
-          </button>
-        </a>
-      </header>
+      <div class="header-wrapper">
+        <header class="header">
+          <a href="https://henrynorth.github.io/" target="_blank">
+            <img class="header__logo" src="assets/logo.png" alt="" />
+          </a>
+          <p class="header__subtitle">I design and build websites, web apps and game UI.</p>
+        </header>
+
+        <div class="hexagon-menu clear">
+          <div class="hexagon-item">
+            <div class="hex-item">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="hex-item">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <a class="hex-content" href="https://github.com/HenryNorth" target="_blank">
+              <span class="hex-content-inner">
+                <span class="icon">
+                  <i class="fa fa-universal-access"></i>
+                </span>
+                <span class="title">GitHub</span>
+              </span>
+              <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+            </a>
+          </div>
+          <div class="hexagon-item">
+            <div class="hex-item">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="hex-item">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <a class="hex-content" href="projects/memory-game">
+              <span class="hex-content-inner">
+                <span class="icon">
+                  <i class="fa fa-bullseye"></i>
+                </span>
+                <span class="title">Memory Game</span>
+              </span>
+              <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <section class="content">
         <div class="row">
           <div class="column">
