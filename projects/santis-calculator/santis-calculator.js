@@ -21,5 +21,9 @@ const Ingredients = Object.freeze({
 });
 
 const menuItems = [
-  {}
+  {
+    label: 'Beef Hardshell Taco',
+    price: 150,
+    ingredients: [Ingredients.TacoShell, Ingredients.Toppings, Ingredients.TacoMeat]
+  },
 ]
