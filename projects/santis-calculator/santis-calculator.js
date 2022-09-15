@@ -11,7 +11,13 @@ const Ingredients = Object.freeze({
   MexicanRice: 10,
   TortillaChips: 11,
   Salsa: 12,
-  Queso: 13
+  Queso: 13,
+  Tequila: 14,
+  MargaritaMix: 15,
+  StrawberryMix: 16,
+  MangoMix: 17,
+  ShotGlass: 18,
+  EmptyCup: 19,
 });
 
 const menuItems = [
